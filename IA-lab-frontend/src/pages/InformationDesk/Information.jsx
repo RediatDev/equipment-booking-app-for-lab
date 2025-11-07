@@ -175,7 +175,7 @@ export default function Information() {
               mb: 1
             }}
           >
-            Laboratory Equipment
+            Available Laboratory Equipment
           </Typography>
           <Typography variant="h6" color="text.secondary">
             Registered Equipments and Operators information

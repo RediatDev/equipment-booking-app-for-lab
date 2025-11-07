@@ -31,7 +31,7 @@ import StudentConfirmation from "./pages/StudentConfirmation/StudentConfirmation
 import StudentsBookingDetail from "./pages/StudentsBookingDetailForProfessor/StudentsBookingDetail.jsx"
 import ProfessorPasswordUpdator from "./pages/PasswordUpdator/ProfessorPasswordUpdator.jsx"
 import PasswordUpdater from "./pages/PasswordUpdator/PasswordUpdater.jsx";
-
+import Notification from "./pages/Notification/Notification.jsx"
 
 const RoutesConfig = () => {
   return (
@@ -64,6 +64,7 @@ const RoutesConfig = () => {
         <Route path="/userRoleUpdate" element={<Layout><UserRoleUpdater /></Layout>} />
         <Route path="/deleteOldData" element={<Layout><DeleteRecords /></Layout>} />
         <Route path="/operatorUpdates/:resultId" element={<Layout><OperatorUpdating /></Layout>} />
+        <Route path="/notification" element={<Layout><Notification /></Layout>} />
         <Route path="/professors/viewStudentBooking/:userId/:professorId" element={<Layout showHeader={false} showFooter={true}> <StudentsBookingDetail/></Layout>}
         />
       </Route>

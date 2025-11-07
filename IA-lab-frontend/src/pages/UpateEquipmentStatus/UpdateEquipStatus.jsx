@@ -111,7 +111,10 @@ function UpdateEquipStatus() {
   
   const paginationModel = { page: 0, pageSize: 10 };
   return (
-    <div className={classes.mainDash}>
+
+    <>
+    
+       <div className={classes.mainDash}>
       <MDBContainer fluid className="p-5 container">
         <MDBRow>
           <MDBCol md="6" className="text-center text-md-start">
@@ -200,7 +203,12 @@ function UpdateEquipStatus() {
           )}
         </div>
       </MDBContainer>
+      
     </div>
+
+    
+    </>
+ 
   );
 }
 

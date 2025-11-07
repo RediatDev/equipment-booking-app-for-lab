@@ -18,6 +18,13 @@ function DashboardHeader() {
     navigate("/login");
   };
 
+// 0 user (default)
+// 1 lab technician  (operator)
+// 2  TA
+// 3  admin 
+// 4  super-admin
+// 5   professor
+
   const navLinks = {
     0: [
       { to: "/dashboard", label: "Home" },
@@ -39,21 +46,23 @@ function DashboardHeader() {
       { to: "/dashboard", label: "Home" },
       { to: "/addEquipments", label: "Add Equipment" },
       { to: "/addProfessors", label: "Add Professor" },
-      { to: "/ListOfAllUsers", label: "See All Users" },
-      { to: "/userRoleUpdate", label: "Grant Privilege" },
-      { to: "/deleteOldData", label: "Delete Old Data" },
+      { to: "/ListOfAllUsers", label: "All Users" },
+      { to: "/userRoleUpdate", label: "Privilege" },
+      { to: "/deleteOldData", label: "Clean Old Data" },
       { to: "/blockBooking", label: "Block Booking" },
       { to: "/EquipStatusUpdate", label: "Alter Equipment Status" },
+      { to: "/notification", label: "Notification" },
     ],
     4: [
       { to: "/dashboard", label: "Home" },
       { to: "/addEquipments", label: "Add Equipment" },
       { to: "/addProfessors", label: "Add Professor" },
-      { to: "/ListOfAllUsers", label: "See All Users" },
-      { to: "/userRoleUpdate", label: "Grant Privilege" },
-      { to: "/deleteOldData", label: "Delete Old Data" },
+      { to: "/ListOfAllUsers", label: "All Users" },
+      { to: "/userRoleUpdate", label: "Privilege" },
+      { to: "/deleteOldData", label: "Clean Old Data" },
       { to: "/blockBooking", label: "Block Booking" },
       { to: "/EquipStatusUpdate", label: "Alter Equipment Status" },
+     { to: "/notification", label: "Notification" },
     ],
     5: [{ to: "/ProfessorDashboard", label: "Professor Dashboard" }],
   };
